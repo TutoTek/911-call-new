@@ -1,0 +1,70 @@
+{
+  "Intervention 1": {
+    "Message 1": {
+      "titre": "Appelant",
+      "description": "IL Y A LE FEU !",
+      "addField": ["Opérateur", "1 | Calmez vous, êtes-vous en sécurité ?\n2 | Merci ! Je viens de me rappeler que j'avait mit mon poulet au four, j'allais l'oublier !\nRépondez par \"1\" ou par \"2\"."],
+      "reponse": 1,
+      "reason": ""
+    },
+    "Message 2": {
+      "titre": "Appelant",
+      "description": "Oui, Mais sa brûle beaucoup",
+      "addField": ["Opérateur", "1 | Parfait, pas besoin d'envoyer de véhicules si vous êtes en sécurité ! Au revoir !\n2 | Qu'est ce qui brûle Madame ?\nRépondez par \"1\" ou par \"2\"."],
+      "reponse": 2,
+      "reason": ""
+    },
+    "Message 3": {
+      "titre": "Appelant",
+      "description": "MA MAISON !!! ELLE BRÛLE !!!",
+      "addField": ["Opérateur", "1 | Quelle est votre localisation ?\n2 | Elle est grande comment ?\nRépondez par \"1\" ou par \"2\"."],
+      "reponse": 1,
+      "reason": ""
+    },
+    "Message 4": {
+      "titre": "Appelant",
+      "description": "910 streetcity",
+      "addField": ["Opérateur", "1 | D'accord, je vous envoie une ambulance ! Les secours arrivent !\n2 | D'accord, je vous envoie un fourgon incendie ! Les secours arrivent !\n3 | D'accord, je vous envoie un véhicule de police ! Les secours arrivent !\nRépondez par \"1\", \"2\", ou \"3\"."],
+      "reponse": 2,
+      "reason": ""
+    }
+  },
+  "Intervention 2": {
+    "Message 1": {
+      "titre": "Appelant",
+      "description": "Bonjour j'aimerais prendre une pizza pépperoni avec supplément frites s'il vous plaît",
+      "addField": ["Opérateur", "1 | Nous ne sommes pas une pizzeria madame...\n2 | Y a t-il une urgence qui nécéssite l'intervention des secours ?\n3 | D'accord nous envoyons un véhicule vous la livrer !\nRépondez par \"1\", \"2\" ou \"3\"."],
+      "reponse": 2,
+      "reason": "```Lorsque tu recoit un appel de ce type, demande toujours à l'appelant si il y a un problème, car cela peut être un signal de détresse.```"
+    },
+    "Message 2": {
+      "titre": "Appelant",
+      "description": "... *[CRI]*",
+      "addField": ["Opérateur", "1 | Madame ? Madame ? Vous allez bien ?\n2 | Vous raccrochez car vous vous dites que ce n'était qu'une simple farce\nRépondez par \"1\" ou par \"2\""],
+      "reponse": 1,
+      "reason": "```Tu as entendu un cri, il ce peut donc qu'il y ai une détresse. Tu doit rester au téléphone pour tenter de géo-localiser le téléphone de l'appelant pour pouvoir envoyer les véhicules nécéssaires. Si tu as toujours la personne au bout du fil, demande lui son adresse, rassure la et dit lui que les secours arrivent.```"
+    },
+    "Message 3": {
+      "titre": "Appelant",
+      "description": "... *[AUCUN SON]*",
+      "addField": ["Opérateur", "1 | Appeller les services de localisation\n2 | Raccrocher\nRépondez par \"1\" ou par \"2\""],
+      "reponse": 1,
+      "reason": "```Tu as entendu un cri ainsi qu'un silence continu après, il ce peut donc qu'il y ai une détresse importante. Tu doit donc envoyer les secours. Même si tu n'es pas certain que ce soit une réelle intervention, rassure la et dit lui que les secours arrivent.```"
+    },
+    "Message 4": {
+      "titre": "SYSTEME",
+      "description": "Localisation en cours ...",
+      "newDescription": "Localisation réussi:876, blowstreet",
+      "addField": ["Opérateur", "1 | Vous pensez que c'est une farce et vous raccrochez\n2 | Les secours arrivent, ne bougez pas !\n3 | Vous pensez qu'il n'est pas nécéssaire de faire intervenir les secours\nRépondez par \"1\", \"2\", ou \"3\"."],
+      "reponse": 2,
+      "reason": "```Tu as entendu un cri ainsi qu'un silence continu après, il ce peut donc qu'il y ai une détresse importante. Tu doit donc envoyer les secours. Même si tu n'es pas certain que ce soit une réelle intervention, rassure la et dit lui que les secours arrivent.```"
+    },
+    "Message 5": {
+      "titre": "Appelant",
+      "description": "........*[PAN]*..",
+      "addField": ["Opérateur", "1 | Tu envoie une ambulance\n2 | Tu envoie les pompiers\n3 | Tu envoie la police\n4 | Tu demande l'intervention des forces spéciales (RAID)ainsi qu'une équipe médicale\nRépondez par \"1\", \"2\", \"3\" ou \"4\"."],
+      "reponse": 4,
+      "reason": "```Tu as entendu un coup de feu, tu doit donc prendre en compte une potencielle victime. Tu doit également faire intervenir des forces spéciales (RAID) pour protéger et arrêter les potenciels tireurs.```"
+    }
+  }
+}
