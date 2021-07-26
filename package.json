@@ -1,0 +1,24 @@
+{
+  "name": "911-call-new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TutoTek/911-call-new.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TutoTek/911-call-new/issues"
+  },
+  "homepage": "https://github.com/TutoTek/911-call-new#readme",
+  "dependencies": {
+    "discord.js": "12.5.0",
+    "moment": "^2.29.1"
+  }
+}

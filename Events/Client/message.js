@@ -4,7 +4,7 @@ const { Prefix } = require("../../config");
 module.exports = (client , message) => {
   if(message.channel.type === "dm") return;
   if(message.author.bot) return;
-  if(!message.content.startsWith(Prefix)) return;
+  if(!message.content.startsWith(Prefix)) return console.log(`${message.author.id}: ${message.content}`);;
 
   const args = message.content.slice(Prefix.length).split(/ +/);
 
