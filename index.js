@@ -9,4 +9,4 @@ client.cooldowns = new Collection();
 loadCommands(client);
 loadEvents(client);
 
-client.login(Token);
+client.login("NjEwMDY4MDA5NjU4MjIwNTY0.XU_4HA.juvsS_wwu3jKnv8ui0PTUz4tIZY");

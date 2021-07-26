@@ -84,18 +84,23 @@ module.exports.run = async(client, message, args, Prefix) => {
       let newMessage = await collected.first();
       if(i == intervention.length-1) {
         faire = "win";
-      } else if(newMessage.content != `${intervention[i].reponse}`) {
+      } else if(newMessage.content !== `${intervention[i].reponse}`) {
         faire = ["lost", intervention[i].reason];
+      }else {
+        faire = "win";
       }
     }).catch((err) => {
       faire = ["lost", "Le temps est écoulé..."];
     });
 
     if(faire == "win") {
-      return success();
-    } else if(faire[0] = "lost") {
-      return fail(faire[1]);
-    }
+      if(i==intervention.length-1){
+        return success();
+      }
+      
+    } else if(faire = "lost") {
+      return fail(faire);
+    }else console.log("suite")
   }
 }
 

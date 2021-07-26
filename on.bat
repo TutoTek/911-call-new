@@ -5,7 +5,7 @@ echo.
 echo.
 echo -------------------- Debut --------------------
 echo.
-
+yarn 
 node index.js
 
 echo.
